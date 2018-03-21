@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+
 }
 
 a{
@@ -36,7 +37,10 @@ a{
   width: 20%;
 }
 
-
+h1{
+  color: $greyDark;
+  font-size: 2.5rem;
+}
 
 body{
   background-color: $yellow;
@@ -114,8 +118,11 @@ body{
     .jumbotron{
       display: block;
       position: relative;
+      top:0;
+      left:0;
+      right:0;
       height: 400px;
-      width: 100%;
+      //width: 100%;
       margin-bottom: 20px;
       background: url(../Assets/images/homepage.jpg);
       background-size:cover;
@@ -133,17 +140,30 @@ body{
         }
       }
     }
+    section{
+      margin-top: 50px;
+    }
     h2{
       text-align: center;
       font-family: 'Lora', serif;
       font-size: 32px;
       font-weight: 500;
-
     }
     h3{
       margin: 0 auto;
       text-align: center;
       color:$greyDark;
+      span{
+        font-family: "georgia";
+        font-weight: 300;
+
+        &:before{
+          content: open-quote;
+        }
+        &::after{
+          content: close-quote;
+        }
+      }
     }
     .services-container{
       width:100%;
@@ -208,12 +228,6 @@ body{
 
       padding-top: inherit;
       margin-top:15px;
-      //position:fixed;
-      //top: 70px;
-      //right: 10%;
-      //width: 16%;
-      //padding-top: inherit;
-
       h2{
         border-bottom: 2px solid $greyDark;
       }
@@ -260,6 +274,36 @@ body{
         }
       }
     }
+    #aboutUs-container{
+      h1{
+        margin-bottom: 20px;
+      }
+      ul{
+        margin-bottom: 20px;
+        li{
+          list-style: disc;
+          line-height: 1.5em;
+          width: 80%;
+          margin: 10px auto;
+          h4{
+            text-align: left;
+          }
+        }
+      }
+      #serv-info{
+        padding: 20px;
+        margin: 20px auto;
+        font-family: georgia;
+      }
+      p{
+        width: 80%;
+        margin: 0 auto;
+
+        line-height: 1.5em;
+        margin-bottom: 20px;
+      }
+    }
+
   }
   footer{
     position: relative;

@@ -26,6 +26,10 @@ a {
   right: 0;
   width: 20%; }
 
+h1 {
+  color: #524e4c;
+  font-size: 2.5rem; }
+
 body {
   background-color: #f8f4f2;
   font-family: 'Lora', serif; }
@@ -90,8 +94,10 @@ body {
     body main .jumbotron {
       display: block;
       position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 400px;
-      width: 100%;
       margin-bottom: 20px;
       background: url(../Assets/images/homepage.jpg);
       background-size: cover;
@@ -106,6 +112,8 @@ body {
         body main .jumbotron .jumbotron-info h2 {
           color: #fff;
           text-align: center; }
+    body main section {
+      margin-top: 50px; }
     body main h2 {
       text-align: center;
       font-family: 'Lora', serif;
@@ -115,6 +123,13 @@ body {
       margin: 0 auto;
       text-align: center;
       color: #524e4c; }
+      body main h3 span {
+        font-family: "georgia";
+        font-weight: 300; }
+        body main h3 span:before {
+          content: open-quote; }
+        body main h3 span::after {
+          content: close-quote; }
     body main .services-container {
       width: 100%;
       text-align: center;
@@ -201,6 +216,26 @@ body {
             content: " ";
             display: block;
             height: 20px; }
+    body main #aboutUs-container h1 {
+      margin-bottom: 20px; }
+    body main #aboutUs-container ul {
+      margin-bottom: 20px; }
+      body main #aboutUs-container ul li {
+        list-style: disc;
+        line-height: 1.5em;
+        width: 80%;
+        margin: 10px auto; }
+        body main #aboutUs-container ul li h4 {
+          text-align: left; }
+    body main #aboutUs-container #serv-info {
+      padding: 20px;
+      margin: 20px auto;
+      font-family: georgia; }
+    body main #aboutUs-container p {
+      width: 80%;
+      margin: 0 auto;
+      line-height: 1.5em;
+      margin-bottom: 20px; }
   body footer {
     position: relative;
     height: auto;

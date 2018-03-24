@@ -1,2 +1,2 @@
-# private-investogator
-Private Investigator Website
+# apollo-investigator
+Website for Apollo Investigator

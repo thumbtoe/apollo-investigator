@@ -37,7 +37,7 @@ function burgerMenuDropdown() {
       if (burgerMenuList[i].style.display == "none") {
         burgerMenuList[i].style.display = "block";
       } else {
-        burgerMenuList[i].style.display == "none"
+        burgerMenuList[i].style.display = "none";
       }
     }
   });

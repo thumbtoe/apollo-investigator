@@ -34,7 +34,11 @@ function burgerMenuDropdown() {
   burgerMenu.addEventListener("click", function() {
 
     for (var i = 0; i < burgerMenuList.length; i++) {
-      burgerMenuList[i].style.display = "block";
+      if (burgerMenuList[i].style.display == "none") {
+        burgerMenuList[i].style.display = "block";
+      } else {
+        burgerMenuList[i].style.display == "none"
+      }
     }
   });
 }

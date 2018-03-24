@@ -232,7 +232,7 @@ body{
       position: absolute;
       right:20px;
       padding-top: inherit;
-      margin-top:15px;
+      margin-top:35px;
       width: 256px;
       h2{
         border-bottom: 2px solid $greyDark;
@@ -547,6 +547,55 @@ body{
     }
     main{
       padding: 2px;
+      .services-container{
+
+        .services{
+          display: inline-block;
+          height: 210px;
+          width: 100%;
+          max-width: 366px;
+
+          @include border-radius(3px);
+          @include box-shadow (0px, 0px, 1px, 1px, 0,0,0,0.25);
+          .services-title{
+            height: 40px;
+            padding: 10px;
+            background-color: $white;
+            color: $greyDark;
+            h3{
+              font-size: 20px;
+              font-weight: 400;
+            }
+          }
+          .services-main{
+            display: block;
+            position: relative;
+            height: 180px;
+            width: 100%;
+            overflow: hidden;
+            img{
+              display: block;
+              position: relative;
+              max-width: 100%;
+              object-fit:contain;
+            }
+            .details{
+              display: block;
+              position:absolute;
+              top: 0;
+              bottom: 0;
+              width:100%;
+              padding: 20px 10px;
+              background-color: rgba(82,78,76,0.70);
+              p{
+                color: $white;
+                text-align: center;
+              }
+            }
+            
+          }
+        }
+      }
       .left{
 
         ul{
